@@ -7,8 +7,8 @@ mongoose.connect(process.env.MONGODB_URI)
 
 
 const article = new user({
-  email: 'hicaroandre@hotmail.com',
-  senha: 'c7s8v6p1',
+  email: 'teste@hotmail.com',
+  senha: 'vdvfvf',
 });
 
 await article.save();
