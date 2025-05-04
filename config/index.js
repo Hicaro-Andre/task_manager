@@ -1,6 +1,9 @@
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
 
-mongoose.connect("mongodb+srv://hicaroandre:epBcEqHv0fu1wPpH@cluster0.eyhty.mongodb.net/login_user?retryWrites=true&w=majority")
+dotenv.config();
+
+mongoose.connect(process.env.MONGODB_URI)
 
 
 const article = new user({
